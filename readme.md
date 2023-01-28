@@ -9,7 +9,7 @@ Following these steps will install some common tools for PHP development inside 
 - https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-windows-terminal
 - https://www.docker.com/products/docker-desktop/
 
-```
+```ps
 wsl --install
 
 wsl --install -d Ubuntu
@@ -24,7 +24,7 @@ wsl --list --verbose
 
 # Step 2: create SSH key for WSL2 machine
 
-```
+```bash
 ssh-keygen -t ed25519 -C "laptop-work-wsl2"
 
 # -> Keep pressing ENTER (no passphrase)
@@ -40,7 +40,7 @@ Copy the SSH key to your git accounts
 
 (An older GIT version should already be installed)
 
-```
+```bash
 git config --global user.name "My Name"
 git config --global user.email "myname@example.com"
 ```
@@ -50,7 +50,7 @@ git config --global user.email "myname@example.com"
 
 # Step 3: clone this repo + install
 
-```
+```bash
 mkdir -p ~/git
 cd ~/git
 
@@ -63,10 +63,23 @@ chmod +x install update
 
 * ![WSL-2 Ubuntu](scripts/wsl-install.png)
 
+# PHPStorm on Windows - use Remote interpreter (all php versions)
+
+![WSL-2 Ubuntu](scripts/wsl-remote-php-interpreter-1.png)
+
+![WSL-2 Ubuntu](scripts/wsl-remote-php-interpreter-2.png)
+
+# Visual Studio Code
+
+- Download for Windows: https://code.visualstudio.com
+
+```bash
+# inside WSL-2, in any directory you want to open:
+code .
+```
+
 # Update & Upgrade your Ubuntu distro (WSL2) regularly with:
 
-```
-cd ~/git/wsl2
-
-./update
+```bash
+cd ~/git/wsl2 && ./update
 ```

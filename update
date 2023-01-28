@@ -1,4 +1,4 @@
-GREEN="\e[32m"
+YELLOW="\e[33m"
 ENDCOLOR="\e[0m"
 
 
@@ -6,9 +6,10 @@ chmod +x ./scripts/*.sh
 mkdir -p ./logs
 
 
-echo -e "\n${GREEN}updating${ENDCOLOR}"
+echo -e "\n${YELLOW}updating${ENDCOLOR}"
 ./scripts/update.sh &> ./logs/update.log
+echo -e "\xE2\x9C\x94 done"
 
-
-echo -e "\n${GREEN}upgrading${ENDCOLOR}"
+echo -e "\n${YELLOW}upgrading${ENDCOLOR}"
 ./scripts/upgrade.sh &> ./logs/upgrade.log
+echo -e "\xE2\x9C\x94 done"

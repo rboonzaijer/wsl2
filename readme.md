@@ -18,7 +18,7 @@ wsl --set-default Ubuntu
 wsl --list --verbose
 ```
 
-* ![WSL-2 Ubuntu](wsl.png)
+* ![WSL-2 Ubuntu](scripts/wsl.png)
 
  Continue by opening up Windows Terminal (set default to Ubuntu)
 
@@ -61,7 +61,7 @@ chmod +x install update
 ./install
 ```
 
-* ![WSL-2 Ubuntu](wsl-install.png)
+* ![WSL-2 Ubuntu](scripts/wsl-install.png)
 
 # Update & Upgrade your Ubuntu distro (WSL2) regularly with:
 

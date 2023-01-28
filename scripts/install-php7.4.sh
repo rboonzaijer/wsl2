@@ -2,8 +2,7 @@
 
 sudo apt-get install -y php7.4
 
-sudo apt-get install -y
-    php7.4-bcmath \
+sudo apt-get install -y php7.4-bcmath \
     php7.4-bz2 \
     php7.4-cli \
     php7.4-common \

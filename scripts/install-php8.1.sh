@@ -2,8 +2,7 @@
 
 sudo apt-get install -y php8.1
 
-sudo apt-get install -y
-    php8.1-bcmath \
+sudo apt-get install -y php8.1-bcmath \
     php8.1-bz2 \
     php8.1-cli \
     php8.1-common \

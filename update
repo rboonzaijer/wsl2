@@ -6,10 +6,15 @@ chmod +x ./scripts/*.sh
 mkdir -p ./logs
 
 
+echo "" &>> ./logs/update.log
+echo "================================= $(date) =================================" &>> ./logs/update.log
 echo -e "\n${YELLOW}updating${ENDCOLOR}"
-./scripts/update.sh &> ./logs/update.log
+./scripts/update.sh &>> ./logs/update.log
 echo -e "\xE2\x9C\x94 done"
 
+
+echo "" &>> ./logs/upgrade.log
+echo "================================= $(date) =================================" &>> ./logs/upgrade.log
 echo -e "\n${YELLOW}upgrading${ENDCOLOR}"
-./scripts/upgrade.sh &> ./logs/upgrade.log
+./scripts/upgrade.sh &>> ./logs/upgrade.log
 echo -e "\xE2\x9C\x94 done"

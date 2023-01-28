@@ -10,49 +10,75 @@ mkdir -p ./logs
 ./update
 
 
+echo "" &>> ./logs/install-git.log
+echo "================================= $(date) =================================" &>> ./logs/install-git.log
 echo -e "\n${YELLOW}installing GIT${ENDCOLOR}"
-./scripts/install-git.sh &> ./logs/install-git.log
+./scripts/install-git.sh &>> ./logs/install-git.log
 echo -e "\xE2\x9C\x94 done"
 
 
+
+echo "" &>> ./logs/install-nvm.log
+echo "================================= $(date) =================================" &>> ./logs/install-nvm.log
 echo -e "\n${YELLOW}installing nvm (node/npm/yarn)${ENDCOLOR}"
-./scripts/install-nvm.sh &> ./logs/install-nvm.log
+./scripts/install-nvm.sh &>> ./logs/install-nvm.log
 echo -e "\xE2\x9C\x94 done"
 
 
+
+echo "" &>> ./logs/install-php-repo.log
+echo "================================= $(date) =================================" &>> ./logs/install-php-repo.log
 echo -e "\n${YELLOW}installing PHP repository${ENDCOLOR}"
-./scripts/install-php-repo.sh &> ./logs/install-php-repo.log
+./scripts/install-php-repo.sh &>> ./logs/install-php-repo.log
 echo -e "\xE2\x9C\x94 done"
 
+echo "" &>> ./logs/install-php8.2.log
+echo "================================= $(date) =================================" &>> ./logs/install-php8.2.log
 echo -e "\n${YELLOW}installing PHP 8.2 + extensions${ENDCOLOR}"
-./scripts/install-php8.2.sh &> ./logs/install-php8.2.log
+./scripts/install-php8.2.sh &>> ./logs/install-php8.2.log
 echo -e "\xE2\x9C\x94 done"
 
+echo "" &>> ./logs/install-php8.1.log
+echo "================================= $(date) =================================" &>> ./logs/install-php8.1.log
 echo -e "\n${YELLOW}installing PHP 8.1 + extensions${ENDCOLOR}"
-./scripts/install-php8.1.sh &> ./logs/install-php8.1.log
+./scripts/install-php8.1.sh &>> ./logs/install-php8.1.log
 echo -e "\xE2\x9C\x94 done"
 
+echo "" &>> ./logs/install-php8.0.log
+echo "================================= $(date) =================================" &>> ./logs/install-php8.0.log
 echo -e "\n${YELLOW}installing PHP 8.0 + extensions${ENDCOLOR}"
-./scripts/install-php8.0.sh &> ./logs/install-php8.0.log
+./scripts/install-php8.0.sh &>> ./logs/install-php8.0.log
 echo -e "\xE2\x9C\x94 done"
 
+echo "" &>> ./logs/install-php7.4.log
+echo "================================= $(date) =================================" &>> ./logs/install-php7.4.log
 echo -e "\n${YELLOW}installing PHP 7.4 + extensions${ENDCOLOR}"
-./scripts/install-php7.4.sh &> ./logs/install-php7.4.log
+./scripts/install-php7.4.sh &>> ./logs/install-php7.4.log
 echo -e "\xE2\x9C\x94 done"
 
+echo "" &>> ./logs/set-default-php-version.log
+echo "================================= $(date) =================================" &>> ./logs/set-default-php-version.log
 echo -e "\n${YELLOW}Set default php version${ENDCOLOR}"
-./scripts/set-default-php-version.sh &> ./logs/set-default-php-version.log
+./scripts/set-default-php-version.sh &>> ./logs/set-default-php-version.log
 echo -e "\xE2\x9C\x94 done"
 
 
+
+echo "" &>> ./logs/install-composer.log
+echo "================================= $(date) =================================" &>> ./logs/install-composer.log
 echo -e "\n${YELLOW}installing composer${ENDCOLOR}"
-./scripts/install-composer.sh &> ./logs/install-composer.log
+./scripts/install-composer.sh &>> ./logs/install-composer.log
 echo -e "\xE2\x9C\x94 done"
 
 
+
+echo "" &>> ./logs/short-bash-name.log
+echo "================================= $(date) =================================" &>> ./logs/short-bash-name.log
 echo -e "\n${YELLOW}shorten bash name${ENDCOLOR}"
-./scripts/short-bash-name.sh &> ./logs/short-bash-name.log
+./scripts/short-bash-name.sh &>> ./logs/short-bash-name.log
 echo -e "\xE2\x9C\x94 done"
+
+
 
 echo -e "\n${GREEN}-------------------${ENDCOLOR}"
 echo -e "${GREEN}installed versions:${ENDCOLOR}"

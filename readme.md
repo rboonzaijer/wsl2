@@ -48,6 +48,8 @@ chmod +x install update
 git config --global user.name "My Name"
 git config --global user.email "myname@example.com"
 ```
+( github email-privacy: https://github.com/settings/emails )
+
 
 ### Update+Upgrade WSL2 regularly with:
 

@@ -1,0 +1,57 @@
+GREEN="\e[32m"
+YELLOW="\e[33m"
+ENDCOLOR="\e[0m"
+
+
+chmod +x *.sh update
+./update
+
+
+echo -e "\n${GREEN}shorten bash name${ENDCOLOR}"
+./short-bash-name.sh &> short-bash-name.log
+echo -e "${YELLOW}(re-open bash again to apply)${ENDCOLOR}"
+
+echo -e "\n${GREEN}installing GIT${ENDCOLOR}"
+./install-git.sh &> install-git.log
+git -v
+git-lfs -v
+
+
+
+echo -e "\n${GREEN}installing nvm (node/npm/yarn)${ENDCOLOR}"
+./install-nvm.sh &> install-nvm.log
+echo 'node -v'
+node -v
+echo 'npm -v'
+npm -v
+echo 'yarn -v'
+yarn -v
+
+
+# PHP
+echo -e "\n${GREEN}installing PHP repository${ENDCOLOR}"
+./install-php-repo.sh &> install-php-repo.log
+
+echo -e "\n${GREEN}installing PHP 8.2 + extensions${ENDCOLOR}"
+./install-php8.2.sh &> install-php8.2.log
+php8.2 -v
+
+echo -e "\n${GREEN}installing PHP 8.1 + extensions${ENDCOLOR}"
+./install-php8.1.sh &> install-php8.1.log
+php8.1 -v
+
+echo -e "\n${GREEN}installing PHP 8.0 + extensions${ENDCOLOR}"
+./install-php8.0.sh &> install-php8.0.log
+php8.0 -v
+
+echo -e "\n${GREEN}installing PHP 7.4 + extensions${ENDCOLOR}"
+./install-php7.4.sh &> install-php7.4.log
+php7.4 -v
+
+echo -e "\n${GREEN}Set default php version${ENDCOLOR}"
+./set-default-php-version.sh &> set-default-php-version.log
+php -v
+
+
+echo -e "\n${GREEN}installing composer${ENDCOLOR}"
+./install-composer.sh &> install-composer.log

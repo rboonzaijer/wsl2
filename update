@@ -1,0 +1,13 @@
+GREEN="\e[32m"
+ENDCOLOR="\e[0m"
+
+
+chmod +x *.sh
+
+
+echo -e "\n${GREEN}updating${ENDCOLOR}"
+./update.sh &> update.log
+
+
+echo -e "\n${GREEN}upgrading${ENDCOLOR}"
+./upgrade.sh &> upgrade.log

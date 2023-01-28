@@ -11,5 +11,9 @@ source ~/.bashrc
 
 npm install -g yarn
 
+echo 'node'
 node -v
+echo 'npm'
 npm -v
+echo 'yarn'
+yarn -v

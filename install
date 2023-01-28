@@ -3,62 +3,65 @@ YELLOW="\e[33m"
 ENDCOLOR="\e[0m"
 
 
-chmod +x *.sh update
+chmod +x ./scripts/*.sh update
+mkdir -p ./logs
+
+
 ./update
 
 
 echo -e "\n${GREEN}installing GIT${ENDCOLOR}"
-./install-git.sh &> install-git.log
+./scripts/install-git.sh &> ./logs/install-git.log
 git -v
 git-lfs -v
 
 
 
 echo -e "\n${GREEN}installing nvm (node/npm/yarn)${ENDCOLOR}"
-./install-nvm.sh &> install-nvm.log
+./scripts/install-nvm.sh &> ./logs/install-nvm.log
 source ~/.bashrc
-echo 'node -v'
+echo 'node'
 node -v
-echo 'npm -v'
+echo 'npm'
 npm -v
-echo 'yarn -v'
+echo 'yarn'
 yarn -v
 
 
 
 # PHP
 echo -e "\n${GREEN}installing PHP repository${ENDCOLOR}"
-./install-php-repo.sh &> install-php-repo.log
+./scripts/install-php-repo.sh &> ./logs/install-php-repo.log
 
 echo -e "\n${GREEN}installing PHP 8.2 + extensions${ENDCOLOR}"
-./install-php8.2.sh &> install-php8.2.log
+./scripts/install-php8.2.sh &> ./logs/install-php8.2.log
 php8.2 -v
 
 echo -e "\n${GREEN}installing PHP 8.1 + extensions${ENDCOLOR}"
-./install-php8.1.sh &> install-php8.1.log
+./scripts/install-php8.1.sh &> ./logs/install-php8.1.log
 php8.1 -v
 
 echo -e "\n${GREEN}installing PHP 8.0 + extensions${ENDCOLOR}"
-./install-php8.0.sh &> install-php8.0.log
+./scripts/install-php8.0.sh &> ./logs/install-php8.0.log
 php8.0 -v
 
 echo -e "\n${GREEN}installing PHP 7.4 + extensions${ENDCOLOR}"
-./install-php7.4.sh &> install-php7.4.log
+./scripts/install-php7.4.sh &> ./logs/install-php7.4.log
 php7.4 -v
 
 echo -e "\n${GREEN}Set default php version${ENDCOLOR}"
-./set-default-php-version.sh &> set-default-php-version.log
+./scripts/set-default-php-version.sh &> ./logs/set-default-php-version.log
 ls -l /etc/alternatives/php
 
 
 
 echo -e "\n${GREEN}installing composer${ENDCOLOR}"
-./install-composer.sh &> install-composer.log
+./scripts/install-composer.sh &> ./logs/install-composer.log
 source ~/.bashrc
 composer --version
 
 
 
 echo -e "\n${GREEN}shorten bash name${ENDCOLOR}"
-./short-bash-name.sh &> short-bash-name.log
+./scripts/short-bash-name.sh &> ./logs/short-bash-name.log
 echo -e "\n${YELLOW}NOTE: Exit/enter bash or run the following command to apply:${ENDCOLOR}  ${GREEN}source ~/.bashrc${ENDCOLOR}"

@@ -2,12 +2,13 @@ GREEN="\e[32m"
 ENDCOLOR="\e[0m"
 
 
-chmod +x *.sh
+chmod +x ./scripts/*.sh
+mkdir -p ./logs
 
 
 echo -e "\n${GREEN}updating${ENDCOLOR}"
-./update.sh &> update.log
+./scripts/update.sh &> ./logs/update.log
 
 
 echo -e "\n${GREEN}upgrading${ENDCOLOR}"
-./upgrade.sh &> upgrade.log
+./scripts/upgrade.sh &> ./logs/upgrade.log

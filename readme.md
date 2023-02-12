@@ -25,7 +25,7 @@ wsl --list --verbose
 # Step 2: create SSH key for WSL2 machine
 
 ```bash
-ssh-keygen -t ed25519 -C "laptop-work-wsl2"
+ssh-keygen -t ed25519 -C "laptop-wsl2"
 
 # -> Keep pressing ENTER (no passphrase)
 

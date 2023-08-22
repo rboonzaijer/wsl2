@@ -1,2 +1,2 @@
-sudo update-alternatives --set php /usr/bin/php8.1
+sudo update-alternatives --set php /usr/bin/php8.2
 php -v

@@ -38,23 +38,23 @@ echo -e "\n${YELLOW}installing PHP 8.2 + extensions${ENDCOLOR}"
 ./scripts/install-php8.2.sh &>> ./logs/install-php8.2.log
 echo -e "\xE2\x9C\x94 done"
 
-echo "" &>> ./logs/install-php8.1.log
-echo "================================= $(date) =================================" &>> ./logs/install-php8.1.log
-echo -e "\n${YELLOW}installing PHP 8.1 + extensions${ENDCOLOR}"
-./scripts/install-php8.1.sh &>> ./logs/install-php8.1.log
-echo -e "\xE2\x9C\x94 done"
+# echo "" &>> ./logs/install-php8.1.log
+# echo "================================= $(date) =================================" &>> ./logs/install-php8.1.log
+# echo -e "\n${YELLOW}installing PHP 8.1 + extensions${ENDCOLOR}"
+# ./scripts/install-php8.1.sh &>> ./logs/install-php8.1.log
+# echo -e "\xE2\x9C\x94 done"
 
-echo "" &>> ./logs/install-php8.0.log
-echo "================================= $(date) =================================" &>> ./logs/install-php8.0.log
-echo -e "\n${YELLOW}installing PHP 8.0 + extensions${ENDCOLOR}"
-./scripts/install-php8.0.sh &>> ./logs/install-php8.0.log
-echo -e "\xE2\x9C\x94 done"
+# echo "" &>> ./logs/install-php8.0.log
+# echo "================================= $(date) =================================" &>> ./logs/install-php8.0.log
+# echo -e "\n${YELLOW}installing PHP 8.0 + extensions${ENDCOLOR}"
+# ./scripts/install-php8.0.sh &>> ./logs/install-php8.0.log
+# echo -e "\xE2\x9C\x94 done"
 
-echo "" &>> ./logs/install-php7.4.log
-echo "================================= $(date) =================================" &>> ./logs/install-php7.4.log
-echo -e "\n${YELLOW}installing PHP 7.4 + extensions${ENDCOLOR}"
-./scripts/install-php7.4.sh &>> ./logs/install-php7.4.log
-echo -e "\xE2\x9C\x94 done"
+# echo "" &>> ./logs/install-php7.4.log
+# echo "================================= $(date) =================================" &>> ./logs/install-php7.4.log
+# echo -e "\n${YELLOW}installing PHP 7.4 + extensions${ENDCOLOR}"
+# ./scripts/install-php7.4.sh &>> ./logs/install-php7.4.log
+# echo -e "\xE2\x9C\x94 done"
 
 echo "" &>> ./logs/set-default-php-version.log
 echo "================================= $(date) =================================" &>> ./logs/set-default-php-version.log

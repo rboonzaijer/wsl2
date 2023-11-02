@@ -72,11 +72,11 @@ echo -e "\xE2\x9C\x94 done"
 
 
 
-echo "" &>> ./logs/short-bash-name.log
-echo "================================= $(date) =================================" &>> ./logs/short-bash-name.log
-echo -e "\n${YELLOW}shorten bash name${ENDCOLOR}"
-./scripts/short-bash-name.sh &>> ./logs/short-bash-name.log
-echo -e "\xE2\x9C\x94 done"
+# echo "" &>> ./logs/short-bash-name.log
+# echo "================================= $(date) =================================" &>> ./logs/short-bash-name.log
+# echo -e "\n${YELLOW}shorten bash name${ENDCOLOR}"
+# ./scripts/short-bash-name.sh &>> ./logs/short-bash-name.log
+# echo -e "\xE2\x9C\x94 done"
 
 
 

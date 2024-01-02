@@ -18,3 +18,10 @@ echo "================================= $(date) ================================
 echo -e "\n${YELLOW}upgrading${ENDCOLOR}"
 ./scripts/upgrade.sh &>> ./logs/upgrade.log
 echo -e "\xE2\x9C\x94 done"
+
+
+echo "" &>> ./logs/dist-upgrade.log
+echo "================================= $(date) =================================" &>> ./logs/dist-upgrade.log
+echo -e "\n${YELLOW}upgrading (dist-upgrade)${ENDCOLOR}"
+./scripts/dist-upgrade.sh &>> ./logs/dist-upgrade.log
+echo -e "\xE2\x9C\x94 done"

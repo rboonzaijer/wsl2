@@ -32,17 +32,17 @@ echo -e "\n${YELLOW}installing PHP repository${ENDCOLOR}"
 ./scripts/install-php-repo.sh &>> ./logs/install-php-repo.log
 echo -e "\xE2\x9C\x94 done"
 
-# echo "" &>> ./logs/install-php8.4.log
-# echo "================================= $(date) =================================" &>> ./logs/install-php8.4.log
-# echo -e "\n${YELLOW}installing PHP 8.4 + extensions${ENDCOLOR}"
-# ./scripts/install-php8.4.sh &>> ./logs/install-php8.4.log
-# echo -e "\xE2\x9C\x94 done"
-
-echo "" &>> ./logs/install-php8.3.log
-echo "================================= $(date) =================================" &>> ./logs/install-php8.3.log
-echo -e "\n${YELLOW}installing PHP 8.3 + extensions${ENDCOLOR}"
-./scripts/install-php8.3.sh &>> ./logs/install-php8.3.log
+echo "" &>> ./logs/install-php8.4.log
+echo "================================= $(date) =================================" &>> ./logs/install-php8.4.log
+echo -e "\n${YELLOW}installing PHP 8.4 + extensions${ENDCOLOR}"
+./scripts/install-php8.4.sh &>> ./logs/install-php8.4.log
 echo -e "\xE2\x9C\x94 done"
+
+# echo "" &>> ./logs/install-php8.3.log
+# echo "================================= $(date) =================================" &>> ./logs/install-php8.3.log
+# echo -e "\n${YELLOW}installing PHP 8.3 + extensions${ENDCOLOR}"
+# ./scripts/install-php8.3.sh &>> ./logs/install-php8.3.log
+# echo -e "\xE2\x9C\x94 done"
 
 # echo "" &>> ./logs/install-php8.2.log
 # echo "================================= $(date) =================================" &>> ./logs/install-php8.2.log

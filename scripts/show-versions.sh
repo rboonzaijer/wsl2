@@ -6,7 +6,7 @@ echo ''
 echo ''
 
 echo 'php'
-php8.2 -r 'echo PHP_VERSION;'
+php -r 'echo PHP_VERSION;'
 echo ''
 # php8.1 -r 'echo PHP_VERSION;'
 # echo ''
@@ -24,9 +24,9 @@ echo 'npm'
 npm -v
 echo ''
 
-echo 'yarn'
-yarn -v
-echo ''
+#echo 'yarn'
+#yarn -v
+#echo ''
 
 git -v
 git-lfs -v

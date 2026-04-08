@@ -17,5 +17,5 @@ echo 'node'
 node -v
 echo 'npm'
 npm -v
-echo 'yarn'
-yarn -v
+#echo 'yarn'
+#yarn -v
